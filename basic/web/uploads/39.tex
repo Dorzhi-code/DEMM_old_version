@@ -1,0 +1,136 @@
+\documentclass[12 pt, a4paper]{article}
+
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtext}
+
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{indentfirst}
+
+\usepackage{graphicx}
+
+\usepackage{titlesec}
+
+\usepackage{hyperxmp}
+\usepackage[pdfa, hidelinks]{hyperref}
+
+
+\oddsidemargin=0 cm
+\textwidth=16 cm
+\textheight=24 cm
+\topmargin=0 cm
+\headheight=0 cm
+\headsep=0 cm
+
+\parindent=0.5 cm
+
+
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.}
+\makeatother
+
+
+
+
+\begin{document}
+
+\renewcommand{\refname}{Литература}
+
+\setcounter{page}{1}
+
+
+\noindent
+УДК 532.517 \\
+\begin{flushleft}
+\textbf{МАТЕМАТИЧЕСКОЕ МОДЕЛИРОВАНИЕ ПРОЦЕССА ФИЛЬТРАЦИИ НЕЛИНЕЙНЫХ ФЛЮИДОВ В МНОГОСЛОЙНЫХ СРЕДАХ}
+\end{flushleft}
+
+\bigskip
+
+\small
+
+\noindent
+\copyright \ \textbf{Каюмов Шукур} \\
+кандидат физико-математических наук, \\
+доцент, \\
+Ташкентский государственный технический университет \\
+Узбекистан, 100095, Ташкент, ул. Университетская, 2 \\
+е-mail: kayumovmatemic@gmail.com
+
+
+\bigskip
+
+\noindent
+\copyright \ \textbf{Марданов Арслан Пардаевич} \\
+старший преподаватель, \\
+Ташкентский государственный технический университет \\
+Узбекистан, 100095, Ташкент, ул. Университетская, 2 \\
+е-mail: apardayevich@mail.ru
+
+
+\bigskip
+
+\noindent
+\copyright \ \textbf{Хаитов Тожибой Омонович} \\
+старший преподаватель, \\
+Ташкентский государственный технический университет \\
+Узбекистан, 100095, Ташкент, ул. Университетская, 2 \\
+е-mail: tojiboy.xaitov.77@gmail.ru
+
+
+\bigskip
+
+\normalsize
+
+\ \ Изучению процесса фильтрации в многослойных средах, имеет определенную историю, и они в основном посвящена к процессам движение ньютоновских флюидов как однофазных, так и многофазных случаях. Пористые среды являются многослойными структурами и их можно моделировать различными способами. При моделирование этих сред учитывается гидродинамические связи между слоями или их считает несвязанными (изолированными) пластами. Существует различные методы моделировании (Мятив-Гринского, Шелкачев-Гусейнзаде, Хантуша) предполагающие проницаемости и пористости этих слоев по отношении к другим слоям резко различными и как следствие движения флюидов в них происходить по различными направлениям [1]. Предлагаемой работе рассмотрен трехслойный пласт состоящей из хорошо проницаемого (область $\Omega_{2}$) соседствующей (снизу и сверху) плохо проницаемыми  пластами (область $\Omega_{1}$ и $\Omega_{2}$). При этим области $\Omega_{2}$ содержит в себе структурированный флюидов (при фильтрации этих флюидов в пласте существует три зоны: зона ползучести, зона аномальности и зоны линейности с неизвестными подвижными границами), а верхний и нижние области ($\Omega_{1}$ и $\Omega_{2}$)  заполнено флюидами имеющие вязко-пластические характеристики основанной на нелинейные аппроксимации функциональной связи между градиентом давления и скоростью фильтрации [2].
+
+Математическая модель этой задачи следующие: необходимо найти непрерывные функции ${{U}_{i}}\left( x,\,z,\,t \right)\,\,\,\,\,\left( i=1,\,3 \right)$ и ${{U}_{2}}\left( x,\,t \right)$ а также границы подвижных зон ${{l}_{1}}\left( x,\,t \right)$ и ${{l}_{2}}\left( x,\,t \right)$ из следующей системы:
+
+$$\frac{\partial }{\partial x}\left( {{}_{e}}\left( \left| \nabla {{U}_{2}} \right|,\,{{\beta }_{e}} \right)\frac{\partial {{U}_{2}}}{\partial x} \right)+{{\varphi }_{1}}\frac{\partial {{U}_{1}}}{\partial z}{{|}_{z={{h}_{1}}}}-{{\varphi }_{2}}\frac{\partial {{U}_{3}}}{\partial z}{{|}_{z={{h}_{2}}}}=$$
+ $$={{M}_{e}}\frac{\partial {{U}_{2}}}{\partial z},\,\,\,\,\,\,x\in {{\Omega }_{2}},\,\,\,\,\,z\in \left( {{H}_{1}};\,{{H}_{2}} \right),\,\,\,\,\,t>0,\,\,\,\,e=\overline{1,\,3} \eqno (1)$$       			
+$$\frac{\partial }{\partial z}\left( {{\varphi }_{2\gamma -1}}\left( z \right)\frac{\partial {{U}_{2\gamma -1}}}{\partial z} \right)={{M}_{2\gamma -1}}\frac{\partial {{U}_{2\gamma -1}}}{\partial t},\,\,\,\,\,\,z\in \left( {{D}_{1}},\,{{D}_{2}} \right);\,\,\,\,\,\gamma =\overline{1,\,2},\,\,\,\,\,\,t>0. \eqno(2)$$
+с начальными
+
+$${{U}_{2}}\left( x,\,0 \right)={{U}_{0}}\left( x \right),\,\,\,\,\,{{U}_{2\gamma -1}}\left( x,\,z,\,0 \right)={{U}_{0}}\left( x,\,z \right),\,\,\,\,\,\,\,\,\,\,\,\,\left( \gamma =\overline{1,\,2} \right), \eqno(3)$$                   		
+и граничными
+$${{a}_{11}}\left( \left| \nabla {{U}_{2}} \right|,\,{{\beta }_{1}} \right)\frac{\partial {{U}_{2}}}{\partial x}{{|}_{x={{x}_{0}}}}+{{b}_{1}}{{U}_{2}}\left( x,\,t \right){{|}_{x={{x}_{0}}}}={{\psi }_{0}}\left( t \right),\,\,\,\,{{a}_{2}}{{}_{3}}\left( \left| \nabla {{U}_{2}} \right|,\,{{\beta }_{3}} \right)\frac{\partial {{U}_{2}}}{\partial x}{{|}_{x=L}}={{\psi }_{1}}\left( t \right),\eqno(4)$$									
+$${{a}_{0}}{{\varphi }_{1}}\left( z \right)\frac{\partial {{U}_{1}}}{\partial z}{{|}_{\begin{smallmatrix}
+ z=0 \\
+ x\in [{{x}_{0}},\,L]
+\end{smallmatrix}}}=0,\,\,\,\,\,\,\,\,{{a}_{3}}{{\varphi }_{3}}\left( z \right)\frac{\partial U}{\partial z}{{|}_{\begin{smallmatrix}
+ z={{H}_{3}} \\
+ x\in [{{x}_{0}},\,L]
+\end{smallmatrix}}}=0, \eqno(5)$$
+а также условиями на границах зон:
+$${{\Phi}_{1}}\left( \left| \nabla {{U}_{2}} \right|,\,{{\beta }_{1}} \right)\frac{\partial {{U}_{2}}}{\partial x}{{|}_{x={{l}_{1}}-0}}={{\Phi}_{2}}\left( \left| \nabla {{U}_{2}} \right|,\,{{\beta }_{2}} \right)\frac{\partial {{U}_{2}}}{\partial x}{{|}_{x={{l}_{1}}+0}}, \eqno(6)$$
+$${{\Phi}_{2}}\left( \left| \nabla {{U}_{2}} \right|,\,{{\beta }_{2}} \right)\frac{\partial {{U}_{2}}}{\partial x}{{|}_{x={{l}_{2}}-0}}={{\Phi}_{3}}\left( \left| \nabla {{U}_{2}} \right|,\,{{\beta }_{3}} \right)\frac{\partial {{U}_{2}}}{\partial x}{{|}_{x={{l}_{2}}+0}},\,\,\,\,{{U}_{2}}\left( x,\,t \right){{|}_{x={{l}_{r}}-0}}={{U}_{2}}\left( x,\,\,t \right){{|}_{x={{l}_{r}}+0}},\,\eqno(7)$$ 	
+где
+$${{\Phi}_{e}}\left( \left| \nabla {{U}_{2}} \right|,\,{{\beta }_{e}} \right)=\left\{ {{k}_{2}}/{{\mu }_{2}}\left( 1-{{\beta }_{2}}{{\gamma }_{0}}/\left| \nabla {{U}_{2}} \right| \right),\,\,\,x\in \left( {{x}_{0}};\,{{l}_{1}}-0 \right);\, \right.$$                             $$\left( {{k}_{2}}\cdot \left| \nabla {{U}_{2}} \right| \right)/\,\left( {{\mu }_{2}}\left( {{\beta }_{2}}+\left| \nabla {{U}_{2}} \right| \right) \right),\,x\in \left( {{l}_{1}}+0;\,{{l}_{2}}-0 \right);  \left. {{k}_{2}}/{{\mu }_{3}},\,\,x\in \left( {{l}_{2}}+0;\,L \right)\, \right\},\,\,(r,e)=\overline{1,\,2}$$
+$${{a}_{1}}=\left\{ 1;\,0 \right\},\,\,{{b}_{1}}=\left\{ 0;\,1 \right\}.\,\left| {{a}_{1}} \right|+\left| {{b}_{1}} \right|\ne 0, {{\varphi }_{2\gamma -1}}\left( z \right)=\overline{{{\varphi }_{0}}}\left( {{\beta }_{2\gamma -1}}+\left| \nabla {{U}_{2\gamma -1}} \right| \right)/\left( \nabla {{U}_{2\gamma -1}} \right).$$
+
+Ввиду нелинейности задача (1)-(7) она решается применением методов итерации (для нелинейных членов, а также по времени t) и потоковым методом разностной прогонки [3]. Разработанные вычислительные алгоритмы апробирован на тестовых данных. По ним можно судить о динамике изменения давления в пластах, определить величины перетоков между пластами, что позволяет сделать вывод о практическом применимости данной работы.
+
+\bigskip
+
+\textbf{Ключевые слова:} математическая модель, пористая среда, многослойный, изолированный, ползучесть, зона аномальности, подвижные границы, структурированный флюид, вычислительный алгоритм.
+
+\begin{thebibliography}{99}
+	
+\small
+	
+\bibitem{b1}
+Гусейнзаде М. А., Колосовская А. К. Упругий режим в одно пластовых и многопластовых системах. М. «Недра». 1972. 321 с.
+
+\bibitem{b2}
+Каюмов Ш., Марданов А.П., Хаитов Т.О., Каюмов А.Б. Математического моделирования структурированных флюидов в связанных пластах. Сборник трудов международной научной конференции «Актуальные проблемы прикладной математики, информатики и механике». Воронеж. 2020, с. 934-942.
+
+\bibitem{b3}
+Qayumov Sh., Mardanov A.P., Xaitov T.O., Qayumov A.B. Multiparameter  mathematical models of the problem of problem of filtration of unstructured and structured fluids. E3S. Web of conferences 264. 01030(2021)  https://doi. Org/10.1051/t3s conf/2021 26401030.
+
+	
+\end{thebibliography}
+
+
+\end{document} 

@@ -1,0 +1,75 @@
+\documentclass[a4paper,12pt]{book}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage[english, russian]{babel}
+\usepackage[cp1251]{inputenc}
+\textheight = 240mm
+\textwidth = 160mm
+%\usepackage{simplemargins}
+%\usepackage[square]{natbib}
+
+\begin{document}
+%\pagenumbering{gobble}
+%\Large
+ УДК: 517.956
+ 
+\begin{center}
+\textbf{Об обратной задаче с нелинейным условием склеивания для нагруженного параболо-гиперболического уравнения}\\
+\hspace{10pt}
+% Author names and affiliations
+\large
+О.Х.Абдуллаев$^{1,a}$. Б.Д.Мардонов$^{2,b}$\\
+\hspace{10pt}
+\small
+ ${}^1$ Институт математики имени В.И.Романовского. Ташкент. Узбекистан. 100174\\
+ ${}^2$ Бухарский государственный университет. Бухара.Узбекистан. 100011.\\
+${}^a$obidjon.mth@gmail.com, ${}^b$mardonov335@gmail.com\\
+\end{center}
+%\hspace{10pt}
+%\normalsize
+Эта работа посвящена исследованию обратной задачи с нелинейным условием склеивания в смешанной параболико-гиперболической области с характеристическим треугольником в гиперболической части. Следует отметить, что большая часть исследованных задач рассматривалась в прямоугольных областях [1],[2], но в характеристических гиперболических областях ранее не исследовалась.
+
+Рассмотрим уравнение
+$$
+f(x) = \left\{\begin{matrix}
+  {u_{xx}}-_CD_{oy}^\alpha u+\beta u+\gamma u^2+p_1\left(x,y,u(x,0)\right),\,\,\,\,\,\,\,{\text{при}}\,\,y > 0 \hfill \cr
+  {u_{xx}}-{u_{yy}}+p_2\left(x,y,u(x+y,0)\right),\,\,\,\,\,{\text{при}}\,\,\,y<0 \hfill \cr
+ \end{matrix}  \right.
+$$
+в конечной области $\Omega=\left\{(x,y)\, 0<x<1;\, 0<t<h \right\},$
+ограниченная отрезками:  ${A_1}A_2 = \{ (x,y):\,\,\,x = 1,\,\,0 < y < h\},$ ${B_1}B_2 = \{ (x,y):\,\,\,x =
+0,\,\,0 < y < h\},$  $B_2A_2 = \{ (x,y):\,\,\,y= h,\,\,0 < x < 1\} $ при $y>0$  и характеристиками уравнения $B_1С: \, x+y=0,$ $A_1С: \, x-y=l$ при $y<0,$
+где $_CD_{oy}^\alpha -$ дифференциальный оператор Капуто дробного порядка $\alpha,\, (0<\alpha<1).$\\
+
+Введем обозначения   $\Omega^+=\Omega\cap\{y>0\},$  $\Omega^-=\Omega\cap\{y<0\}$ и $I=\{(x,y):\, y=0,\, 0<x<l\}.$
+
+\textbf{Задача A.} Требуется найти пару функций $\{f(x),u(x,y)\}$ для уравнения (1), со следующими свойствами:\\
+1.$f(x)\in C(0,l)\cap L_1(0,1);$\\
+2 $u(x,y) \in C(\bar \Omega ) \cap {C^2}({\Omega^-}),$ ${u_{xx}}\in C\left( {{\Omega ^ + }}\right),$ ${}_CD_{oy}^\alpha u \in C\left( {{\Omega^+ }\cup I} \right);$\\
+3. $u(x,y)$ удовлетворяеть следующие краевые условия
+$$
+u(0,y)=0, \,\,\ u(l,y)=0\,\,\ 0 \leq y \leq h;
+$$
+$$
+u(x,-x) =\psi(x),\,\, 0\leq x \leq l;
+$$ $$
+u_n(x,y)\left| {_{_{{B_1C}}}} \right. = {\psi_{1}}(x),\,\ 0\leq x\leq \frac{l}{2},\ u_n(x,y)\left| {_{_{{A_1C}}}} \right. = \psi_{2}(x),\,\,\ \frac{l}{2}\leq x \leq l;
+$$
+и нелинейное условие склеивания:
+$$
+\mathop{\lim }\limits_{y \to  + 0} {y^{1 - \alpha }}{u_y}(x,y) = {\lambda_1}(x){u_y}(x, - 0) + \lambda_2(x)\int\limits_0^x{r\left(t,u(t,0)\right)dt}
++\lambda_3(x),\, 0<x<l
+$$
+где  $r(x,z(x)),\, p_i(x,y,z(x)),$ $\psi_i(x),$ $\psi_i(x)\, (i=1,2),$ $\lambda_j(x)\, (j={\overline{1,3}})-$ заданные функции, причем $\psi_1\left(\frac{1}{2}\right)=\psi_2\left(\frac{1}{2}\right),$  $\sum\limits_{k = 1}^2 {\lambda_k^2(x)}\ne 0.$
+
+При определенных условиях на заданные функции и на границу области доказывается локальная однозначная разрешимость формулированной задачи. Однозначная разрешимость доказывается методом интегральных уравнений, применяя принцип сжатых отображений.
+
+\medskip \noindent \textbf{Ключевые слова:} Обратная задача,дробное дифференцирование, локальная задача, нелинейное условие склеивание, однозначная разрещимость, метод последовательных приближений.
+
+\medskip \noindent{\sc\textbf{\large Литература}}
+
+[1]. {Sabitov, K.B., Safin, И.M.} {An Inverse Problem for an Equation of Mixed Parabolic-hyperbolic Type in a Rectangular Domain}, \textit{Russian Mathematics} \textbf{54} (2010), no.4, 48--54.\\
+
+[2].{Sabitov, K.B., Martem'yanova, N.V.} {An Inverse Problem for the Lavrent'ev–Bitsadze Equation Connected to the Search for the Elements of the Right-hand Side}, \textit{Russian Mathematics} \textbf{61} (2017), no.2, 36-–48.
+
+
+\end{document} 

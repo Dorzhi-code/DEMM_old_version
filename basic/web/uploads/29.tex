@@ -1,0 +1,206 @@
+\documentclass[12 pt, a4paper]{article}
+
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtext}
+
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{indentfirst}
+
+\usepackage{graphicx}
+
+\usepackage{titlesec}
+
+\usepackage{hyperxmp}
+\usepackage[pdfa, hidelinks]{hyperref}
+
+
+\oddsidemargin=0 cm
+\textwidth=16 cm
+\textheight=24 cm
+\topmargin=0 cm
+\headheight=0 cm
+\headsep=0 cm
+
+\parindent=0.5 cm
+
+
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.}
+\makeatother
+
+
+
+
+\begin{document}
+
+\renewcommand{\refname}{Литература}
+
+\setcounter{page}{1}
+
+
+\noindent
+УДК 517.957 \\
+\begin{flushleft}
+\textbf{Задачи Коши для комплексного модифицированного уравнения Кортевега-де Фриза в классе периодических   бесконечнозонных функций}
+\end{flushleft}
+
+\bigskip
+
+\small
+
+\noindent
+\copyright \ \textbf{Нормуродов Хожимурод} \\
+аспирант кафедры дифференциальные уравнения, \\
+Самаркандский государственный университет \\
+Узбекистан, 140100, г.Самарканд, ул. Университетский бульвар, 15 \\
+normurodov.96@bk.ru
+
+
+\bigskip
+
+\noindent
+\copyright \ \textbf{Алланазарова Тазагул} \\
+аспирант кафедры дифференциальные уравнения, \\
+Каракалпакский государственный университет имени Бердаха, \\
+Узбекистан, 742000, г. Нукус, ул. Академика Ч. Абдирова, 1 \\
+j.tazagul86@mail.ru
+
+\bigskip
+
+\noindent
+\copyright \ \textbf{Исакулова Ирода} \\
+магистрант кафедры дифференциальные уравнения, \\
+Самаркандский государственный университет \\
+Узбекистан, 140100, г.Самарканд, ул. Университетский бульвар, 15 \\
+irodaisokulova@gmail.com
+
+\bigskip
+
+
+\bigskip
+
+
+\normalsize
+
+В данной работе метод обратной спектральной задачи применяется для интегрирования нелинейного комплексного модифицированного уравнения Кортевега-де Фриза в классе периодических бесконечнозонных функций. Вводися эволюция спектральных данных периодического оператора Дирака, коэффициент которого является решением нелинейного комплексного модифицированного уравнения Кортевега-де Фриза (кмКдФ). Доказано разрешимость задачи Коши для бесконечной системы дифференциалных уравнений Дубровина в классе пять раз неприрывно диффиренцируемых периодических бесконечнозонных функций.
+
+В настоящей работе рассматривается задача Коши для нелинейного комплексного модифицированного уравнения Кортевега-де Фриза вида
+\begin{equation} \label{GrindEQ__1_}
+\left\{\begin{array}{l} {p_{t} =a(t)(p_{xxx} -6(p^{2} +q^{2} )p_{x} ),} \\ {q_{t} =a(t)(q_{xxx} -6(p^{2} +q^{2} )q_{x} ),} \end{array}\right.
+\end{equation}
+при начальных условиях
+\begin{equation} \label{GrindEQ__2_}
+\begin{array}{l} {\left. p(x,t)\right|_{t=0} =p_{0} (x),\, \, \, \left. q(x,t)\right|_{t=0} =q_{0} (x),\, \, x\in R} \\ {p_{0} (x+\pi )=p_{0} (x)\in C^{5} \left(R\right),\, \, \, \, \, q_{0} (x+\pi )=q_{0} (x)\in C^{5} \left(R\right)} \end{array}
+\end{equation}
+в классе действительных бесконечнозонных $\pi $ - периодических функций:
+\begin{equation} \label{GrindEQ__3_}
+\begin{array}{l} {p(x+\pi ,t)=p(x,t),\, \, q(x+\pi ,t)=q(x,t),\, \, x\in R,\, \, t\ge 0,} \\ {p(x,t),\, \, q(x,t)\in C_{x}^{3} (t>0)\bigcap C_{t}^{1} (t>0)\bigcap C(t\ge 0).} \end{array}
+\end{equation}
+Здесь $a(t)\in C([0,\infty ))$ заданная непрерывная ограниченная функция.
+
+ В данной работе предлагается алгоритм построения решения $p(x,t),\, \, q(x,t),\, \, \, x\in R,\, \, t>0$, задачи \eqref{GrindEQ__1_}-\eqref{GrindEQ__3_} с помощью обратной спеткральной задачи для оператора Дирака:
+\begin{equation} \label{GrindEQ__4_}
+L(\tau ,t)y\equiv B\frac{dy}{dx} +\Omega (x+\tau ,t)y=\lambda y,\, \, x\in R,\, \, t>0,\, \, \tau \in R
+\end{equation}
+где
+\[B=\left(\begin{array}{l} {\, \, \, \, 0\, \, \, \, 1} \\ {-1\, \, \, \, 0} \end{array}\right),\, \, \Omega (x,t)=\left(\begin{array}{l} {p(x,t)\, \, \, \, \, \, \, \, \, q(x,t)} \\ {q(x,t)\, \, \, \, \, -p(x,t)} \end{array}\right),\, \, y=\left(\begin{array}{l} {y_{1} } \\ {y_{2} } \end{array}\right).\]
+
+Следует отметить, что комплексное модифицированные уравнения Кортевега-де Фриза (кмКдФ) $u_{t} \pm 6\left|u\right|^{2}u_{x} +u_{xxx} =0$ было проинтегрировано в работах [1-3], а также [4-5] в классе быстроубывающих и конечнозонных функций. Если запищем комплексное модифицированные уравнения Кортевега-де Фриза соответствующие знаком $\left(-\right)$ в виде эквивалентной ему на вещественную и мнимую части функции $u\left(x,t\right)=q\left(x,t\right)-ip\left(x,t\right),\, \, \, i=\sqrt{-1} ,$ то получим система уравнения вида \eqref{GrindEQ__1_}.
+
+Обозначим через $c(x,\lambda ,\tau ,t)=(c_{1} (x,\lambda ,\tau ,t),c_{2} (x,\lambda ,\tau ,t))^{T} $ и \\$s(x,\lambda ,\tau ,t)=(s_{1} (x,\lambda ,\tau ,t),s_{2} (x,\lambda ,\tau ,t))^{T} $ решения уравнения \eqref{GrindEQ__4_} с начальными условиями $c(0,\lambda ,\tau ,t)=(1,0)^{T} $ и $s(0,\lambda ,\tau ,t)=(0,1)^{T} $.
+
+Корни уравнения $s{}_{1} (\pi ,\lambda ,\tau ,t)=0$ обозначим через $\xi _{n} (\tau ,t),n\in Z$. Они совпадают с собственными значениями задачи Дирихле для системы \eqref{GrindEQ__4_} с граничными условиями $y_{1} (0,\lambda ,\tau ,t)=0,\, \, y_{1} (\pi ,\lambda ,\tau ,t)=0,$ и при этом $\xi _{n} (\tau ,t)\in [\lambda _{2n-1} ,\lambda _{2n} ],\, n\in Z$, где $\lambda _{n} =\lambda _{n} (\tau ,t),n\in Z$ корни уравнения $\Delta (\lambda )\mp 2=0$,$\Delta (\lambda ,\tau ,t)=c_{1} (\pi ,\lambda ,\tau ,t)+s_{2} (\pi ,\lambda ,\tau ,t)$. Интервалы $(\lambda _{2n-1} ,\lambda _{2n} ),\, \, n\in Z$, называются лакунами
+
+Числа $\xi _{n} (\tau ,t),n\in Z$, и знаки $\sigma _{n} (\tau ,t)=sign\{ s_{2} (\pi ,\xi _{n} ,\tau ,t)-c_{1} (\pi ,\xi _{n} ,\tau ,t)\} ,\, \, n\in Z,$ называются спектральными параметрами оператора $L$. Спектральные параметры $\xi _{n} (\tau ,t),\sigma _{n} (\tau ,t)=\pm 1,\, n\in Z$ и границы спектра $\lambda _{n} (\tau ,t),n\in Z$, называются спектральными данными оператора Дирака $L(\tau ,t)$.
+
+Теперь с помощью начальных функций  $p_{0} (x+\tau ),\, \, q_{0} (x+\tau ),\, \tau \in R,$ построим оператор Дирака вида $L(\tau ,0)$. Решая прямую задачу, находим спектральные данные  $\left\{\lambda _{n} ,\, \, \xi _{n}^{0} (\tau ),\, \, \sigma _{n}^{0} (\tau ),\, \, n\in Z\right\}$ оператора $L(\tau ,0)$
+
+Основной результат настоящей работы содержится в следующей теореме.
+
+\textbf{Теорема 1.} Пусть $p(x,t),\, \, q(x,t),\, \, \, x\in R,\, \, t>0,$ является решением задачи Коши \eqref{GrindEQ__1_}-\eqref{GrindEQ__3_}. Тогда спектральные данные$\left\{\lambda _{n} (\tau ,t),\, \xi _{n} (\tau ,t),\, \, \sigma _{n} (\tau ,t)=\pm 1\right\},\, \, n\in Z,\, $ оператора $L(\tau ,t)$ удовлетворяют аналогу системы уравнений Дубровина:
+
+\begin{enumerate}
+\item  $\frac{\partial \lambda _{n} (\tau ,t)}{\partial t} =0,$
+
+\item  $\frac{\partial \xi _{n} }{\partial t} =2(-1)^{n} \sigma _{n} (\tau ,t)h_{n} (\xi )a(t)\left\{4\xi _{n}^{3} (\tau ,t)+4p(\tau ,t)\xi _{n}^{2} (\tau ,t)+\right. $
+\[+2\left(p^{2} (\tau ,t)+q^{2} (\tau ,t)+q_{\tau } (\tau ,t)\right)\xi _{n} (\tau ,t)+2\left(p(\tau ,t)q_{\tau } (\tau ,t)-p_{\tau } (\tau ,t)q(\tau ,t)\right)+ \]
+\begin{equation} \label{GrindEQ__5_}
+ +2p(\tau ,t)\left(p^{2} (\tau ,t)+q^{2} (\tau ,t)\right)-p_{\tau \tau } (\tau ,t)\} ,\, \, \, \, \, \, n\in Z.
+\end{equation}
+\end{enumerate}
+Здесь знак $\sigma _{n} (\tau ,t)=\pm 1,\, \, n\in Z$ меняется на противоположный при каждом столкновении точки $\xi _{n} (\tau ,t),\, \, n\in Z$ с границами своей лакуны $[\lambda _{2n-1} ,\lambda _{2n} ]$. Кроме того, выполняются следующие начальные условия
+\begin{equation} \label{GrindEQ__6_}
+\left. \xi _{n} (\tau ,t)\right|_{t=0} =\xi _{n}^{0} (\tau ),\, \, \, \left. \sigma _{n} (\tau ,t)\right|_{t=0} =\sigma _{n}^{0} (\tau ),\, \, n\in Z
+\end{equation}
+где $\xi _{n}^{0} (\tau ),\, \, \, \sigma _{n}^{0} (\tau )=\pm 1,\, \, n\in Z,$ - спектральные параметры оператора Дирака $L(\tau ,0)$ с коэффициентами $p_{0} (x+\tau ),\, \, q_{0} (x+\tau ),\, \, \tau \in R$. Последовательность $h_{n} (\xi ),\, \, n\in Z$ участвующая в уравнении \eqref{GrindEQ__5_} определяется по формулам:
+\[ h_{n} (\xi )=\sqrt{(\xi _{n} (\tau ,t)-\lambda _{2n-1} )(\lambda _{2n} -\xi _{n} (t,\tau ))} \times f_{n} (\xi ), \]
+
+\begin{equation} \label{GrindEQ__7_}
+ f_{n} (\xi )=\sqrt{\prod _{ k=-\infty, k\ne n }^{\infty }\frac{(\lambda _{2k-1} -\xi _{n} (\tau ,t))(\lambda _{2k} -\xi _{n} (\tau ,t))}{(\xi _{k} (\tau ,t)-\xi _{n} (\tau ,t))^{2} }  }
+\end{equation}
+
+В результате замена переменных
+\[\xi _{n} (\tau ,t)=\lambda _{2n-1} +(\lambda _{2n} -\lambda _{2n-1} )\sin ^{2} x_{n} (\tau ,t),\, \, n\in Z\]
+систему дифференциальных уравнения Дубровина можно переписать в виде одного уравнения в банаховом  пространстве $K$:
+\begin{equation} \label{GrindEQ__8_}
+\frac{dx(\tau ,t)}{dt} =H(x(\tau ,t)),\, \, \, \, \left. x(\tau ,t)\right|_{t=0} =x^{0} (\tau )\in K
+\end{equation}
+где $K=\{ x(\tau ,t)=(...,x_{-1} (\tau ,t),x_{0} (\tau ,t),x_{1} (\tau ,t),...):\left\| x(\tau ,t)\right\| =\sum _{n=-\infty }^{\infty }(\lambda _{2n} -\lambda _{2n-1} )(1+\left|n\right| )\left|x_{n} (\tau ,t)\right|<\infty \} $\textbf{}
+
+\textbf{Лемма 1.} Если $p_{0} (x+\pi )=p_{0} (x)\in C^{5} (R)$, $q_{0} (x+\pi )=q_{0} (x)\in C^{5} (R)$, то вектор-функция $H(x(\tau ,t))$ удовлетворяет условию Липщица в банаховом пространстве $K$, т.е.
+\[\left\| H(x(\tau ,t))-H(y(\tau ,t))\right\| \le L\left\| x(\tau ,t)-y(\tau ,t)\right\| ,\]
+где
+\begin{equation} \label{GrindEQ__9_}
+L=\sum _{k=-\infty }^{\infty }(1+\left|k\right|)\left|k\right|^{3} \gamma _{k}  <\infty
+\end{equation}
+
+\textbf{Замечание 1. }Теорема 1 и лемма 1 дают метод решения задачи \eqref{GrindEQ__1_} -- \eqref{GrindEQ__3_}. Действительно, сначала найдем спектральные данные $\lambda _{n} ,\, \xi _{n}^{0} (\tau ),\, \sigma _{n}^{0} (\tau )=\pm 1,\, \, n\in Z$, оператора Дирака $L(\tau ,0)$. Обозначим спектральные данные оператора $L(\tau ,t)$ через $\lambda _{n} ,\, \, \xi _{n} (\tau ,t),\, \, \sigma _{n} (\tau ,t)=\pm 1,\, \, n\in Z$. Теперь решая задачу Коши \eqref{GrindEQ__5_}, \eqref{GrindEQ__6_}, при произвольном значении $\tau $, находим $\xi _{n} (\tau ,t),\, \, \sigma _{n} (\tau ,t),\, \, n\in Z$.\textbf{ }Из формулы следов \textbf{}
+\begin{equation} \label{GrindEQ__10_}
+p(\tau ,t)=\sum _{k=-\infty }^{\infty }\left(\frac{\lambda _{2k-1}^{} +\lambda _{2k}^{} }{2} -\xi _{k}^{} (\tau ,t)\right) ,
+\end{equation}
+\begin{equation} \label{GrindEQ__11_}
+q(\tau ,t)=\sum _{k=-\infty }^{\infty }(-1)^{k-1} \sigma _{k} (\tau ,t)h_{k} (\xi (\tau ,t)) ,
+\end{equation}
+определим функции $p(\tau ,t)$ и $q(\tau ,t)$, т.е. решение задачи \eqref{GrindEQ__1_}-\eqref{GrindEQ__3_}.
+
+Таким образом, нами доказана следующая теорема.
+
+ \textbf{Теорема 2. }Если начальные функции $p_{0} (x),\, \, q_{0} (x)$ удовлетворяют условиям $p_{0} (x+\pi )=p_{0} (x)\in C^{5} \left(R\right),\, \, \, \, \, q_{0} (x+\pi )=q_{0} (x)\in C^{5} \left(R\right)$, то существует однозначно определяемое решение  $p(\tau ,t),\, \, q(\tau ,t)$задачи \eqref{GrindEQ__1_} -- \eqref{GrindEQ__3_}, которое определяется соответственно суммой рядов \eqref{GrindEQ__10_}, \eqref{GrindEQ__11_} и принадлежит классу $C_{x}^{3} (t>0)\bigcap C_{t}^{1} (t>0)\bigcap C(t\ge 0).$
+
+\bigskip
+
+\textbf{Ключевые слова:} Комплексного модифицированного уравнения Кортевега-де Фриза, оператор Дирака, спектральные данные, система уравнений Дубровина, формулы следов.
+
+
+
+\begin{thebibliography}{99}
+	
+\small
+	
+\bibitem{1}
+Wadati M. The exact solution of the modified Korteweg-de Vries equation. // J.Phys.Soc.Japn., 32:6,44-47(1972).
+
+\bibitem{2}
+Лэм Дж.Л., Введение в теорию солитонов. М.: "Мир". 1983.
+
+\bibitem{3}
+Хасанов А.Б., Уразбоев Г.У. Метод решения уравнения мКдФ с самосогласованным источником //Узб. матем. журн., 2003, №1, с. 69-75.
+
+\bibitem{4}
+ Смирнов А.О. Эллиптические решения нелинейного уравнения Шредингера и модифицированного уравнения Кортевега-де Фриза.//Матем.сб.,185:8(1994), с.103-114.
+
+\bibitem{5} Матвеев В.Б., Смирнов А.О. Двухфазные периодические решеня уравнений из АКНС иерархии//Зап. науч. сем. ПОМИ, 2018, т.473,  с.205-227.
+
+\bibitem{6}
+Matveev V.B. 30 years of finite-gap integration theory// Phil. Trans. R Soc. A. Vol. 366,  p. 837-875 (2008). \textbf{}
+
+\bibitem{7}
+Хасанов А.Б., Нормуродов Х.Н. Интегрирование нелинейного комплексного модифицированного уравнения Кортевега-де Фриза в классе периодических   бесконечнозонных функций //Докл. АНРУз. 2021, №6, с.11-15
+
+\end{thebibliography}
+
+
+\end{document} 

@@ -1,0 +1,188 @@
+\documentclass[12 pt, a4paper]{article}
+
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtext}
+
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{indentfirst}
+
+\usepackage{graphicx}
+
+\usepackage{titlesec}
+
+\usepackage{hyperxmp}
+\usepackage[pdfa, hidelinks]{hyperref}
+
+
+\oddsidemargin=0 cm
+\textwidth=16 cm
+\textheight=24 cm
+\topmargin=0 cm
+\headheight=0 cm
+\headsep=0 cm
+
+\parindent=0.5 cm
+
+
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.}
+\makeatother
+
+
+
+
+\begin{document}
+
+\renewcommand{\refname}{Литература}
+
+\setcounter{page}{1}
+
+
+\noindent
+УДК 000.00 \\
+\begin{flushleft}
+\textbf{Определение точечных источников в задачах тепломассопереноса}
+\end{flushleft}
+
+\bigskip
+
+\small
+
+\noindent
+\copyright \ \textbf{Пятков Сергей Григорьевич} \\
+доктор физико-математических наук, \\
+ученое звание профессор, \\
+Югорский государственный университет \\
+Россия, 628012, Ханты-Мансийск, ул. Чехова, 16 \\
+s$\underline{\hphantom{1}}\,$pyatkov@ugrasu.ru
+
+
+\bigskip
+
+\noindent
+\copyright \ \textbf{Неустроева Любовь Владимировна} \\
+Югорский государственный университет \\
+Россия, 628012, Ханты-Мансийск, ул. Чехова, 16 \\
+starkovalv@mail.ru
+
+
+\bigskip
+
+
+\normalsize
+
+Данная работа посвящена  исследованию вопросов существования и единственности решения задач определения функции источников по
+точечным данным  переопределения. Исследования важны с точки зрения большого количества приложений, прежде всего в задачах
+определения источников распространения загрязняющих веществ в воздухе или жидкости, актуальность подтверждается большим вниманием к
+данной тематике и, в частности, огромным количеством работ.
+Мы рассматриваем  вопрос об определении вместе с решением правой части специального вида в уравнении
+\begin{equation}\label{0eq01}
+u_{t}-\Delta u +\sum_{i=1}^{n}a_{i}(x)u_{x_{i}}+a_{0}(x)u= \sum_{i=1}^mN_i(t)\delta(x-x_i)+f_{0}(t,x),
+ \end{equation}
+ где $(x,t)\in Q=(0,T)\times G$, $G$ - пространство ${\mathbb R}^{n}$,   полупространство ${\mathbb R}^{n}_+$, или область в ${\mathbb R}^{n}$ ($n=1,2,3$) с  компактной границей $\Gamma\in C^{2}$.
+ Уравнение \eqref{0eq01} дополняется краевыми и начальными условиями
+\begin{equation}\label{0eq02}
+    Bu|_{S}=g,\  \ u|_{t=0}=u_{0}(x),\ \ S=(0,T)\times \Gamma,
+    \end{equation}
+где либо  $Bu=\frac{\partial u}{\partial \nu}+\sigma u$, либо $Bu=u$ ($\nu$ единичная внешняя нормаль к $\Gamma$). Заданы
+также условия переопределения
+\begin{equation}\label{0eq03}
+    \ u(y_{j},t)=\psi_{j}(t),\  j=1,2,\ldots,s.
+\end{equation}
+Пусть
+$\vec{a}=(a_{1},a_{2})$ при $n=2$ и
+$\vec{a}=(a_{1},a_{2},a_{3})$ при  $n=3$. Скобки
+$(\cdot,\cdot)$ обозначают скалярное произведение  ${\mathbb
+R}^{n}$. Мы предполагаем, что
+    \begin{equation}\label{eq14}
+a_{i}\in W_{\infty}^{2}(G),\ \nabla \varphi_{j}, \Delta \varphi_{j}, a_{0}\in L_{\infty}(G),.
+    \end{equation}
+где $j\leq m,\  \ i\leq n$. Введем функции
+ $$
+\varphi_{i}(x)=\frac{1}{2}\int_{0}^{1}(\vec{a}(x_{i}+\tau
+(x-x_{i})),(x-x_{i}))\,d\tau.
+$$
+Пусть   $\delta_{j}=min_{i}r_{ij}, j=1,2,\ldots,s$, где
+$r_{ij}=|x_{i}-y_{j}|$. Введем матрицу  $A_{0}$ с элементами
+ $a_{ji}=e^{\varphi_{i}(y_{j})}$ если
+$|x_{i}-y_{j}|=\delta_{j}$ и $a_{ji}=0$ в противном случае. Мы
+предполагаем, что $ det{A}_{0}\neq 0$, $ u_{0}(x)\in
+W_{2}^{1}(G)$, $u_{0}(x)|_{\Gamma}=g(x,0)$ если  $Bu = u$.
+Фиксируем  $\lambda\geq 0$  и предположим, что
+\begin{multline}\label{eq15}
+e^{-\lambda t}g\in W_{2}^{1/4,1/2}(S) \ (\textrm{для}\
+Bu=\frac{\partial u}{\partial \nu}); \\ e^{-\lambda t} g\in
+W_{2}^{3/4,3/2}(S) \ (\textrm{для} \ Bu=u),\ f_{0}e^{-\lambda
+t}\in L_{2}(G).
+    \end{multline}
+     Пусть $w_{0}$ есть решение задачи
+\begin{equation}\label{eq602} w_{0t}+Lw_{0} =f_{0}(t,x),
+ Bw_{0}|_{S}=g,   w_{0}|_{t=0}=u_{0}(x).\
+ \end{equation}
+ После замены
+ $w=e^{-\lambda t}(u-w_{0})$, задача
+(\ref{0eq01})-(\ref{0eq02}) сведется к задаче
+\begin{multline}\label{eq605}
+w_{t}+Lw+\lambda w = \sum_{i=1}^m e^{-\lambda
+t}N_i(t)\delta(x-x_i),\\
+    Bw|_{S}=0,\  \ w|_{t=0}=0,
+        \end{multline}
+\begin{equation}\label{eq607}
+    w(y_{j},t)=e^{-\lambda t}(\psi_{j}(t)-w_{0}(t,x_{j}))=e^{-\lambda t}\tilde{\psi}_{i}(t),\
+    \end{equation}
+    где $ j\leq m.$
+  Пусть  $V_{\gamma}(t)=\frac{
+e^{-\gamma^{2}/4t}}{4\pi t}$ при  $n=2$ и
+$V_{\gamma}=\frac{\gamma
+e^{-\gamma^{2}/4t}}{2\sqrt{\pi}t^{3/2}}$ при  $n=3$.
+Предположим, что имеет место  представление
+  \begin{equation}\label{eq8}
+ \tilde{\psi}_{j}(t)=
+   \int_{0}^{t}V_{\delta_{j}}(t-\tau)\psi_{0j}(\tau)d\tau,\     \psi_{0j}e^{-\lambda t}\in L_{2}(0,T).
+    \end{equation}
+Пусть  $W_{p,B}^{1}(G)$ есть пространство функций $u\in
+W_{p}^{1}(G)$, удовлетворяющих однородным условиям Дирихле если
+$Bu=u$ и $W_{p,B}^{1}(G)=W_{p}^{1}(G)$ если $Bu\neq u$. Пусть
+ $W_{p,B}^{-1}(G)$ -- двойственное пространство к  $W_{q,B}^{1}(G)$.
+
+ {\bf Теорема. } {\it Пусть    $p\in (1,n/(n-1))$ и в случае
+ $G={\mathbb R}^{n}_{+}$ $a_{i}=0$ $(i=1,2,\ldots,n)$. Тогда существует   $\lambda_{2}$
+такое, что при       $\lambda\geq \lambda_{2}$, если условия
+{\rm (\ref{eq15}), (\ref{eq8})} выполнены,  то существует
+единственное решение $(u,\vec{N})$ задачи {\rm
+(\ref{0eq01})-(\ref{0eq02})} такое, что  $u=e^{\lambda
+t}(w_{0}+w)$, где   $w_{0}\in W_{2}^{1,2}(Q)$, $e^{\lambda
+t}w_{0}$ есть решение задачи  {\rm (\ref{eq602})}, $w\in
+L_{2}(0,T;W_{p,B}^{1}(G))$ есть решение задачи {\rm
+(\ref{eq605})}, $w_{t}\in L_{2}(0,T;W_{p,B}^{-1}(G))$, and
+$w\in W_{2}^{1,2}(Q_{\varepsilon})$, где
+$Q_{\varepsilon}=\{(x,t)\in Q:\ |x-x_{i}|>\varepsilon \ \forall
+i\leq m\}$  для всех $\varepsilon>0$, $e^{-\lambda t}
+N_{i}(t)\in  L_{2}(0,T)$ $(i=1,\ldots,m)$.}
+
+Доказательство основано на асимптотических представлениях, приведенных в работе \cite{b1}. Мы получаем теоретические результаты и строим алгоритм, позволяющий определить точечные источники по дополнительным данным в точках, лежащих в области. Полученные результаты могут быть использованы при создании численных алгоритмов решения ряда экологических задач.
+
+\bigskip
+
+\textbf{Ключевые слова:} параболическая задача, начально-краевая задача, функция Грина, асимптотика, существование, единственность.
+
+
+
+\begin{thebibliography}{99}
+	
+\small
+	
+\bibitem{b1}
+Pyatkov~S., Neustroeva~L. On some asymptotic representations of solutions to elliptic
+    equations and their applications~// Complex Variables and
+    Elliptic Equations. 2021. Vol.~66. N.~6-7.
+    P.~964--987.
+
+	
+\end{thebibliography}
+
+
+\end{document} 

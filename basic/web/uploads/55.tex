@@ -1,0 +1,144 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage[english, russian]{babel}
+\textheight = 230mm \textwidth = 160mm \topmargin = -2mm
+\oddsidemargin=6mm \evensidemargin=6mm \makeindex
+\begin{document}
+\large
+\makeatletter
+\renewcommand{\@evenhead}{\vbox{\thepage\hfil{\verb "—арымсаковские чтени€, “ашкент-2021"}\hrule}}
+\renewcommand{\@oddhead}{\vbox{\hfill{\verb "—арымсаковские чтени€, “ашкент-2021"}
+\hfill\thepage\hrule}} \makeatother
+\begin{center}
+\textbf{CARLEMAN'S FORMULA OF A SOLUTIONS OF THE POISSON
+EQUATION IN BOUNDED DOMAIN} \\
+\medskip
+\textbf{Sattorov E.\, N. $^{1}$, Ermamatova  Z.\,E.$^{2}$} \\
+\smallskip
+{Samarkand State University , Samarkand, Uzbekistan,}\\
+{e-mail1@Sattorov-e@rambler.ru;}\\
+{Samarkand State University , Samarkand, Uzbekistan,}\\
+{e-mail2@zuxroermamatova@rambler.ru}
+\end{center}
+
+Poisson equation or potential equation [1]
+$$
+ -\triangle U(x)\equiv -\sum\limits_{i=1}^{3}\frac{\partial^2 U}{\partial x_i^2} =f(x), \eqno(1)
+$$
+is the classical example for second order elliptic partial
+differential equations and it is a mathematical model to some
+important physical phenomena. It has applications in many different
+areas such as plasma physic, electrocardiography, and corrosion
+non-destructive evaluation (e.g., [2], [3],[4], [5], [6]).
+
+In this paper, we offer an explicit formula for reconstruction of a
+solution of the Poisson equation in bounded domain from its values
+and the values of its normal derivative on part of the boundary,
+i.e., we give an explicit continuation formula for a solution to the
+Cauchy problem for the Poisson equation.
+
+Let $R^3$ is the third dimensional real Euclidean space,
+$$x=(x_1,x_2,x_3),\,\ y=(y_1,y_2,y_3)\in R^3, \,\ x'=(x_1,x_2),
+\ y'=(y_1,y_2)\in  R^2,$$$$ s=\alpha
+^2=|y'-x'|=(y_1-x_1)^2+(y_2-x_2)^2,\,\ r^2=s+(y_3-x_3)^2=|y-x|^2,
+\tau=tg\frac{\pi}{2\rho},\,\ \rho>1,\,\
+$$$$G_\rho=\{y:|y'|<\tau y_3,\,\ y_3>0\},\,\ \partial
+G_\rho=\{y:|y'|=\tau y_3,\,\ y_3>0\}, \,\
+\overline{G}_\rho=G_\rho\cup\partial G_\rho,\,\
+\varepsilon,\varepsilon_1
+$$
+and $\varepsilon_2$ sufficiently small positive constants,
+$$G_\rho^\varepsilon=\{y:|y'|<\tau(y_3-\varepsilon)\},\,\
+\partial G_\rho^\varepsilon=\{y:|y'|=\tau(y_3-\varepsilon)\}
+\,\ \overline{G}_\rho^\varepsilon=G_\rho^\varepsilon\cup
+\partial G_\rho^\varepsilon,$$
+$$
+C=\{\varsigma:\varsigma=\xi+i\eta,\,\ -\infty<\xi<\infty, \,\
+-\infty<\eta<\infty,\} .
+$$
+$\Omega_\rho-$ is a bounded simply connected domain whose boundary
+in $R^3$  whose boundary $\partial\Omega_\rho$ consists of a part of
+the conic surface $T\equiv\partial G_\rho$ and a smooth surface $S,$
+lying inside the cone $\overline{G}_\rho.$ The case $\rho=1$ is the
+limit case. In this case $G_1 $ is the half-space $y_3>0,\partial
+G_1 $ is the hyperplane $y_3=0,$ and $\Omega_1$ is a bounded simply
+connected domain whose boundary consists of a compact connected part
+of the hyperplane $y_3=0$ and a smooth surface $S$ in the half-space
+$y_1\geq 0,\,\ \overline{\Omega}_\rho=\Omega_\rho\cup\partial
+\Omega_\rho,\,\ S_0,$ is the interior of $S,$ and function $f$
+H\"{o}lder continuous with exponent $\lambda \in (0,1), $ i.e., $f
+\in C^{s,\lambda}(\overline{\Omega}_\rho)$ and $s\in Z_+.$
+
+\textbf{Problem.}  Let we know the Cauchy data for a solution to
+system (0.1) on the surface $S$:
+
+$$U(y) = f_1(y), \frac{\partial U(y)}{\partial n} =f_2(y), y\in S  \eqno(2) $$
+where $n = (n_1, n_2, n_3)$ is the unit outward-pointing normal to
+the surface $\partial \Omega$ at a point $y$, and $f_1 , f_2 $ are
+continuous vector-functions. Given $f_1(y)$ and $f_2(y)$ on $S$,
+find $U(x)$  $x\in \Omega$.
+
+The Cauchy problem (2)for the Poisson equation (1) is well-known to
+be ill-posed [7], [8].  Hadamard [9] noted that solution to problem
+is not stable. Possibility of introducing a positive parameter
+$\sigma$, depending on the accuracy of the initial data, was noticed
+by M. M. Lavrent'ev [10]. Uniqueness of the solution follows from
+the general theorem by Holmgren [11].  Traditionally, regularization
+techniques, such as Tikhonov regularization [12].
+
+We suppose that a solution to the problem exists (in this event it
+is unique) and continuously differentiable in the closed domain and
+the Cauchy data are given exactly. In this case we establish an
+explicit continuation formula. This formula enables us to state a
+simple and convenient criterion for solvability of the Cauchy
+problem.
+
+The result established here is a multidimensional analog of the
+theorems and Carleman-type formulas [13], by G.M.Goluzin,
+V.I.Krylov, V.A.Fok, and F.M.Kuni in the theory of holomorphic
+functions of one variable [14],[15].
+
+\begin{center}
+\textsl{REFERENCES}
+\end{center}
+1. Gilbarg D., Trudinger N. Elliptic partial differential equations
+of second order, Springer-Verlag Berlin Heidelberg, New
+York, Tokyo 1983 \\
+2. Blum J., Numerical simulation and optimal control in plasma
+physics, New York, NY; John Wiley and Sons Inc., 1989.\\
+3. Chen G. and Zhou J. , Boundary Element Methods, Academic Press,
+London, 1992.\\
+4. Colli-Franzone P., Guerri L., Tentoni L., Viganotti L., Baruffi
+S., Spaggiari S., and Taccardi B., A mathematical procedure for
+solving the inverse potential problem of electrocardiography.
+Analysis of the time-space accuracy from in vitro experimental data,
+Mathematical Biosciences, 77 (1985), pp. 353-396.\\
+5. Fasino D. and Inglese G., An inverse Robin problem for Laplace's
+equation: theoretical results and numerical methods,
+Inverse problems, 15 (1999), p. 41.\\
+6. Inglese G., An inverse problem in corrosion detection, Inverse
+problems, 13 (1997), p. 977.\\
+7. Alessandrini G., Rondi L., Rosset E., and  Vessella S., The
+stability for the Cauchy problem for elliptic equations, Inverse
+problems, 25 (2009), p. 123004.\\
+8. Belgacem F. B., Why is the Cauchy problem severely ill-posed?,
+Inverse Problems, 23 (2007), p. 823.\\
+9. Hadamard J., Lectures on the Cauchy Problem in Linear Partial
+Differential Equations, Yale University Press, New Haven, 1923.\\
+10. Lavrentev, M. M. Some Improperly Posed Problems in
+Mathematical Physics (Springer, Berlin, 1967).\\
+11. Bers, L., John, F., Schechter, M. Partial Differential
+Equations (Interscience, New York, 1964).\\
+12. Tikhonov A. N. and Arsenin V. Y., Solutions of ill-posed
+problems, Winston, 1977.\\
+13. Arbuzov, E. V., Bukhgeim, A. L. УThe Carleman Formula for the
+MaxwellТs Equations on a PlaneФ, Sib. Elektron. Mat. Izv., No. 5,
+448-455 (2008) [in Russian].\\
+14. Goluzin G. M. and Krylov V.I., "A generalized Carleman fornula
+and its application to analytic continuation of functions,"Vat.Sb.,
+40, No.2, (1933), p.144-149 . \\
+15. Fok V.A. and Kuni F.M., "On the introduction of a 'suppressing'
+function in dispersion relations," Dokl. Akad. Nauk SSSR, 127, No.
+6, (1959), p. 1195-1198. \\
+
+\end{document}

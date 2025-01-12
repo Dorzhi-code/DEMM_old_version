@@ -1,0 +1,129 @@
+\documentclass[12 pt, a4paper]{article}
+
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtext}
+
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{indentfirst}
+
+\usepackage{graphicx}
+
+\usepackage{titlesec}
+
+\usepackage{hyperxmp}
+\usepackage[pdfa, hidelinks]{hyperref}
+
+
+\oddsidemargin=0 cm
+\textwidth=16 cm
+\textheight=24 cm
+\topmargin=0 cm
+\headheight=0 cm
+\headsep=0 cm
+
+\parindent=0.5 cm
+
+
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.}
+\makeatother
+
+
+
+
+\begin{document}
+
+\renewcommand{\refname}{Литература}
+
+\setcounter{page}{1}
+
+
+\noindent
+УДК 517.95; 517.956.6 \\
+\begin{flushleft}
+\textbf{Краевая задача для смешанного уравнения с двумя линиями изменения типа в прямоугольнике}
+\end{flushleft}
+
+\bigskip
+
+\small
+
+\noindent
+\copyright \ \textbf{Убайдуллаев Улугбек  Шукириллаевич} \\
+кандидат  физико-математических наук,  \\
+ученое звание старший  преподаватель, \\
+Самаркандский филиал Ташкентского  государственного экономического университета, \\
+Узбекистан, 140147,  г.Самарканд, ул. Профессоров, 51. \\
+е-mail: ulugbekuz88@mail.ru
+\bigskip
+
+\noindent
+\copyright \ \textbf{Саидназаров Зоир Рахмонович} \\
+магистр Термезского государственного университета, \\
+Узбекистан, 190111,  г.Термез, ул. Баркамол авлод, 43\\
+
+\bigskip
+
+\textbf{Благодарности}
+Работа выполнена при финансовой поддержке Узбекского фонда фундаментальных исследований (проект  \textbf{Ф3-202009211}).
+
+\bigskip
+
+
+\normalsize
+
+В прямоугольной области $\Omega =\left\{(x,y):\; \; 0<x<l,\; \; -p<y<r\; \right\}$ рассмотрим уравнение смешанного типа
+\begin{equation} \label{GrindEQ__1_}
+0=Lu\equiv \left\{\begin{array}{l} {u_{xx} -{}_{c} D_{qy}^{\alpha _{{\kern 1pt} } } u,\quad x>0,\; \; y>q,} \\ {{\rm \; \; }u_{xx} +u_{yy} ,{\rm \; \; \; \; \; \; \; }x>0,\; \; y>0,} \\ {{\rm \; \; }u_{xx} -u_{yy} ,{\rm \; \; \; \; \; \; \; }x>0,\; \; y<0,} \end{array}\right.
+\end{equation}
+где  $p>0,$ $r>0,\; \; 0<q<r\; \, -$ заданные действительные числа, а ${}_{c} D_{qy}^{\alpha _{{\kern 1pt} } } -$ оператор дробного дифференцирования по $y$ в смысле Капуто порядка $\alpha \in (0,\, 1]$, определяемый по формуле
+\begin{equation} \label{GrindEQ__2_}
+{}_{c} D_{qy}^{\alpha _{{\kern 1pt} } } f(y)=\left\{\begin{array}{l} {\frac{1}{\Gamma (1-\alpha )} \int _{q}^{y}(y-t)^{-\alpha } f'(t)dt,\quad 0<\alpha <1, } \\ {{\rm \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; }\frac{d}{dy} f(y),{\rm \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; \; }\alpha =1.} \end{array}\right.
+\end{equation}
+
+ Введем обозначения: $J_{1} =\left\{(x,y):\, \, 0<x<1,\, \, y=0\right\},\; \; J_{2} =\left\{(x,y):\, \, 0<x<1,\, \, y=q\right\},$
+$\Omega {\kern 1pt} {\kern 1pt} _{1} =\Omega \; \bigcap \; \; \left\{(x,y):\; \, x>0,\, \, y<0\right\}, \Omega _{\, {\rm 2}} =\Omega \; \bigcap \; \; \left\{(x,y):\, \; x>0,\, \, y>0\right\},$   $ \Omega _{{\rm 3}} =\Omega \; \bigcap \; \; \left\{(x,y):\, \; x>0,\, \, y>q\right\},  \Omega =\Omega _{1} \bigcup \Omega _{2} \, \bigcup \Omega _{3} \, \bigcup J_{1} \bigcup J_{2} ,\; \; \; \Delta _{1} =\; \Omega _{1} \bigcup \Omega _{2} \bigcup J_{1} ,\; \; \Delta _{2} =\; \Omega _{2} \bigcup \Omega _{3} \bigcup J_{2} ,\; \; q>0.$
+
+ В области $\Omega $  исследуем следующую задачу.
+
+\textbf{Задача 1. }Требуется найти функции $u(x,y)$с следующими
+
+\noindent свойствами: 1) $u(x,y)\in C(\overline{\Omega }),$ $u\in C_{x}^{2} (\bar{\Omega }),\, \, \, u\in C_{y}^{2} (\bar{\Omega }_{1} \cup \bar{\Omega }_{2} ),$ $\ {}_{c} D_{0y}^{\alpha _{{\kern 1pt} } } u\in C(\bar{\Omega }_{3} )$ и удовлетворяет уравнению \eqref{GrindEQ__1_}  в областях $\Omega _{j} (j=\overline{1,3})$;  2)$(y-q)^{1-\alpha } u_{y} (x,y)\in \; C(\Omega _{{\kern 1pt} 3} \bigcup J_{2} )$, $u_{y} (x,y)\in \; C(\Delta _{1} \cup \Omega _{2} \cup J_{2} )$ и на линии  $J_{2} $ выполняются условия склеивания
+\begin{equation} \label{GrindEQ__3_}
+u(x,+q)=u(x,-q),\; \; (x,q)\in \bar{J}_{2} , \    \mathop{\lim }\limits_{y\to +q} (y-q)^{1-\alpha } u_{y} (x,y)=\mathop{\lim }\limits_{y\to \, \, -q} u_{y} (x,y), \ (x,0)\in J_{2} ;
+\end{equation}
+
+3) $u(x,y)$ удовлетворяет граничным условиям
+\begin{equation} \label{GrindEQ__4_}
+u(0,y)=0,\quad u(1,y)=0,\quad -p\le y\le r\, ,  u(x,-p)=\psi (x),\quad 0\le x\le 1\, ,
+\end{equation}
+где $\psi (x)\; -$ заданные достаточно гладкие функции.
+
+ Заметим, что прямые задачи для уравнения пароболо-гиперболического типа целого порядка исследовано в работе К.Б.Сабитова \cite{bb1}, а уравнения с оператором дробного порядка изучено в \cite{bb2}.
+
+\textbf{Теорема 1. }Если в области  $\; \Delta _{1} $  существует решение $u(x,y)$ задачи \eqref{GrindEQ__1_}, \eqref{GrindEQ__4_} и $u(x,0)=\tau _{2} (x),\quad (x,0)\in \bar{J}_{2} $, то оно единственно только тогда, когда выполнено условие $\delta _{1pq} (n)=cos\pi np\, sh\pi nq+sin\pi np\, ch\pi nq\ne 0$  при всех  $ n\in N.$
+
+\textbf{Теорема 2. }Если в области $\; \Delta _{2} $ существует решение $u(x,y)$ задачи \eqref{GrindEQ__1_}, первые две условия \eqref{GrindEQ__4_}  и $u(x,0)=\tau _{1} (x),\quad (x,0)\in \bar{J}_{1} $, то оно единственно только тогда, когда выполнено условие $\delta _{2q} (n)=\Gamma (\alpha )\, ch\pi nq+\pi n\, sh\pi nq\ne 0$  при всех  $n\in N.$
+
+Теорема существования и устойчивость решения задачи 1 доказывается методом спектрального анализа \cite{bb1}  при определенных ограничениях заданные функции.
+
+
+\bigskip
+
+\textbf{Ключевые слова:} Краевая задача, уравнения смешанного типа, уравнения с двумя линиями изменения типа, прямоугольный область.
+
+\noindent
+
+\begin{thebibliography}{99}
+	
+\small
+	
+\bibitem{bb1}
+Сабитов К.Б. Прямые и обратные задачи для уравнений смешанного параболо-гиперболического типа.  Москва : Наука, 2016. 271 с.
+
+\bibitem{bb2} Islomov B.I., Ubaydullayev U.Sh. On a Boundary-value Problem for a Parabolic-Hyperbolic Equation with Fractional Order Caputo Operator Rectangular Domain. // Lobachevskii Journal of  Mathematics. 2020.  Vol. 41. No. 9. pp. 1801--1810.
+\end{thebibliography}
+\end{document} 

@@ -1,0 +1,145 @@
+\documentclass[12 pt, a4paper]{article}
+
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtext}
+
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{indentfirst}
+
+\usepackage{graphicx}
+
+\usepackage{titlesec}
+
+\usepackage{hyperxmp}
+\usepackage[pdfa, hidelinks]{hyperref}
+
+
+\oddsidemargin=0 cm
+\textwidth=16 cm
+\textheight=24 cm
+\topmargin=0 cm
+\headheight=0 cm
+\headsep=0 cm
+
+\parindent=0.5 cm
+
+
+\makeatletter
+\renewcommand{\@biblabel}[1]{#1.}
+\makeatother
+
+
+
+
+\begin{document}
+
+\renewcommand{\refname}{Литература}
+
+\setcounter{page}{1}
+
+
+\noindent
+УДК 517.968.73 \\
+\begin{flushleft}
+\textbf{Задача Коши, связанная с перидинамической моделью нагрева}
+\end{flushleft}
+
+\bigskip
+
+\small
+
+\noindent
+\copyright \ \textbf{Юлдашева Асал Викторовна} \\
+кандидат физико-математических наук, \\
+филиал МГУ в Тшакенте \\
+Узбекистан, 100060, Ташкент, ул. А.Темура, 22 \\
+yuasv86@mail.ru
+
+
+\bigskip
+
+\textbf{Благодарности}
+
+Работа выполнена при финансовой поддержке.
+
+
+\bigskip
+
+
+\normalsize
+
+Задача теплообмена в
+телах со сложной, термически неоднородной микроструктурой
+описывается следующим интегро-дифференциальным уравнением с начальным условием
+\begin{gather}
+\label{eq1}
+\frac{\partial u(x,t)}{\partial t}\ =\ \int\limits_{D}
+K(x,y)\,[u(x,t) - u(y,t)]\, dy\ +\ f(x,t),   \quad  x\in D, \
+t>0,
+\label{eq2}
+\ u(x,0) = \varphi (x),  \quad \ x\in D,
+\end{gather}
+где $D \subset\mathbb{R}^2\ -$ область с кусочно-гладкой
+границей.
+
+Здесь предполагается, что неизвестная функция $u :
+D \times[0,T] \to \mathbb{R}$, ядро $K : D \times D \to
+\mathbb{R}$ и внешняя сила $f:D \times[0,T]\to\mathbb{R}$
+являются скалярными функциями.
+
+Интегральный оператор  уравнения (\ref{eq1}) имеет
+специальное сильно сингулярное ядро, которое
+вблизи диагонали $x=y$ имеет вид
+$$
+K(x,y)\ =\ \frac{c_n}{|x-y|^2}\ +\ \gamma(x,y),
+$$
+где $\gamma(x,y)$ интегрируемая функция, и выполняется граничное
+условие
+$$
+\frac{\partial}{\partial \nu_x}\, K(x,y)\ =\ 0, \quad
+x\in\partial D, \quad y\in D.
+$$
+
+Здесь $\nu=\nu(x)\ -$ внешняя нормаль к границе $\partial D$
+области $D$ в точке $x\in\partial D $.
+
+Решением задачи (\ref{eq1})-- (\ref{eq2}) назовём
+функцию $u\in C^2\big\{[0,T]\to W_2^\alpha(D)\big\}$,
+удовлетворяющую уравнению (\ref{eq1}) и начальным условиям (\ref{eq2}).
+
+Основной результат данной работы заключается в следующем.
+
+{\bf Теорема.} {\it  Пусть $0<\alpha<1$.
+Для любого $T>0$ и любых $\varphi\in W_2^\alpha(D)$, $\psi\in
+W_2^\alpha(D)$ и $f\in C\big\{[0,T]\to
+W_2^\alpha(D)\big\}$ существует, и при том единственное,
+решение задачи (\ref{eq1})-- (\ref{eq2}) из класса $C^2\big\{[0,T]\to
+W_2^\alpha(D)\big\}$.}
+
+
+
+\bigskip
+
+\textbf{Ключевые слова:} перидинамика, интегро-дифференциальное уравнение, задача Коши, метод Раделения переменных, пространство Соболева.
+
+
+
+\begin{thebibliography}{99}
+	
+\small
+	
+\bibitem{b1}
+Sih G. C. Heat conduction in the infinite medium with lines of discontinuities // Journal of Heat Transfer. 1965. 87.P. 293--298.
+
+\bibitem{b2}
+Bobaru F., Duangpanya M. The peridynamic formulation for transient heat conduction //International Journal of Heat
+and Mass Transfer. 2010. № 53. P. 4047--4059. 
+
+	
+\end{thebibliography}
+
+
+\end{document} 
